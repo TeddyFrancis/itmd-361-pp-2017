@@ -34,7 +34,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #three,
 #two,
 #one {
-
+  height: 40px;
+  width: 40px;
 }
 
 #three {
