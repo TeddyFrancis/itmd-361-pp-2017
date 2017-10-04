@@ -28,7 +28,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ==== LAYOUT STYLES ==== */
 #content {
-  display: flex;
+  display: flex; /* creates container */
 }
 
 #three,
@@ -38,15 +38,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 #three {
-  order: 3;
+  order: 3; /* displayed third */
 }
 
 #two {
-  order: 2;
+  order: 2; /* displayed second */
 }
 
 #one {
-  order: 1;
+  order: 1; /* displayed first */
 }
 
 @media screen and (min-width: 600px) {
