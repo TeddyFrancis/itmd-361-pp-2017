@@ -55,6 +55,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
+  #one, #two{
+    flex: 1 auto;
+  }
+  #three{
+    flex-flow: wrap;
+    flex: 1 auto;
+  }
 
 }
 
