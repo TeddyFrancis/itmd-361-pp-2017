@@ -34,9 +34,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #three,
 #two,
 #one {
-  flex: 1 auto;
-  height: 40px;
-  width: 20vw;
+  flex: 1 auto; /* sets all boxes across the screen in 3 windows */
+  height: 20vmin; /*resizes with the width resizing */
+  width: 20vw; /*dynamic resizing of width of boxes */
+  /* this setting the height this way helps resize the height of the
+  sections as the widthn is changed via the size of the viewport */
 }
 
 #three {
