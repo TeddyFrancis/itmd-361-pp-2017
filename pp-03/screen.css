@@ -55,14 +55,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
-  #one, #two{
-    flex: 1 auto;
-  }
-  #three{
-    flex-flow: wrap;
-    flex: 1 auto;
+  #content{
+    flex-wrap: wrap;
   }
 
+  #one,
+  #two{
+    flex: 1 auto;
+    width: 50%;
+    height: 25vw;
+  }
+
+  #three {
+    flex: 2 0px;
+    width: 100%;
+    height: 25vw;
+  }
+  /* Set the #content container to wrap. Set #one and #two to share
+     a row while #three comes under them in the display. */
 }
 
 @media screen and (min-width: 800px) {
