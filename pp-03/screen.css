@@ -37,9 +37,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   flex: 1 auto; /* sets all boxes across the screen in 3 windows */
   height: 25vw; /*resizes with the width resizing */
   width: 25%; /*dynamic resizing of width of boxes */
-  /* this setting the height this way helps resize the height of the
+  /*
+  this setting the height this way helps resize the height of the
   sections as the widthn is changed via the size of the viewport.
-  Finishes part 2 of pp-03. */
+  Finishes part 2 of pp-03.
+  */
 }
 
 #three {
@@ -70,7 +72,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     width: 100%;
     height: 25vw;
   }
-  /* Set the #content container to wrap. Set #one and #two to share
+  /*
+    Set the #content container to wrap. Set #one and #two to share
      a row while #three comes under them in the display.
      This finishes part 3 of pp-03.
   */
@@ -80,4 +83,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   #content {
     flex-wrap: nowrap;
   }
+
+  #one,
+  #two,
+  #three {
+    flex: 1 auto;
+    width: 33.333%;
+    height: 33vw;
+  }
+  /*
+    Took out row wrapping from 600px break. Similar to part 2
+    of pp-03 but now at 800px break. Finishes part 4 of pp-03.
+  */
 }
