@@ -72,7 +72,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     height: 25vw;
   }
   /* Set the #content container to wrap. Set #one and #two to share
-     a row while #three comes under them in the display. */
+     a row while #three comes under them in the display.
+     This finishes part 3 of pp-03. 
+  */
 }
 
 @media screen and (min-width: 800px) {
