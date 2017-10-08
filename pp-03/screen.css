@@ -29,16 +29,17 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex; /* creates container */
+  flex-wrap: wrap;
 }
 
 #three,
 #two,
 #one {
-  flex: 1 auto; /* sets all boxes across the screen in 3 windows */
-  height: 25vw; /*resizes with the width resizing */
-  width: 25%; /*dynamic resizing of width of boxes */
+  height: 25vmin; /*resizes with the width resizing */
+  width: 100%; /*dynamic resizing of width of boxes */
   /*
-  this setting the height this way helps resize the height of the
+  Changed the boxes so they lay in one column in mobile.
+  Setting the height this way helps resize the height of the
   sections as the widthn is changed via the size of the viewport.
   Finishes part 2 of pp-03.
   */
