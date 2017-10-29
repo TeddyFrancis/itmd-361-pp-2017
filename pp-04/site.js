@@ -1,8 +1,7 @@
 //  1. Correct the variable scope so that the console.log call
 //  outputs the correct value for x (5) even after double(6) is
 //  called:
-
-var x = 5;
+var x;
 
 function double(num) {
   x = num * 2;
@@ -10,7 +9,13 @@ function double(num) {
 }
 
 double(6);
+x = 5;
 console.log('The value of x is:', x, 'It should be 5.');
+// Moved the variable declaration under the function call.
+// Here, the variable is still hoisted to the stop so it is
+// declared for the use in the function. It will get set
+// to 12 after the function is called but set back to 5
+// after the assignment of 5.
 
 //  2. Rewrite the corrected JavaScript above as a self-executing
 //  anonymous function that does not pollute the global
