@@ -23,6 +23,28 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
 
+(function(){
+  var y;
+
+  function dobule(num){
+    y = num * 2;
+    return y;
+  }
+  double(6);
+  y = 5;
+  console.log('The value of y is:', y, 'It should be 5.');
+})();
+
+console.log(window.y);
+
+// The window.y displays undefined when it is called. This is because
+// y is defined in the self executing function and not in the global
+// scope. For some reason, the lint file give an error saying that
+// the double function in line 29 is declared but not used when it
+// is clearly called in line 33. I think this has to do with the file
+// because during the first part, I had no errors from the linter when
+// done but now I do.
+
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
