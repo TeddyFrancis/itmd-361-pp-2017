@@ -64,11 +64,13 @@ function arrayEach(array, func) {
 
 arrayEach(['red', 'green', 'blue'], console.log);
 
-console.log(i); // should be 'undefined', not 3
+// console.log(i); // should be 'undefined', not 3
 
 // Getting error in output for i being undefined. Moved declaration of
 // i inside the function before the for loop creating it to be undefined
 // at the global scale.
+// Commented out the console.log(i) so that the rest of the file can run
+// for the purpose of working on number 4 in pp-04.
 
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
