@@ -26,7 +26,7 @@ console.log('The value of x is:', x, 'It should be 5.');
 (function(){
   var y;
 
-  function dobule(num){
+  function double(num){
     y = num * 2;
     return y;
   }
@@ -44,6 +44,10 @@ console.log(window.y);
 // is clearly called in line 33. I think this has to do with the file
 // because during the first part, I had no errors from the linter when
 // done but now I do.
+
+// ***New commit***
+// Error found, typo in function(). The word double was spelled
+// incorrectly at declaration.
 
 
 //  3. Correct this function so that there is no i variable in
