@@ -83,3 +83,10 @@ function addTwo(x) {
 
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
+
+// The reason that line 85 does not return 6 as the output is because the
+// value of 6 is declared in the scope of the addTwo function. This function
+// will always return the correct value when called as in line 84 because the
+// function returns the passed paramter + 2. Globally, the value of x is 5. So
+// when one goes to display the value of x globally, the value of 5 will always
+// be returned in this instance unless the value of x is changed globally.
