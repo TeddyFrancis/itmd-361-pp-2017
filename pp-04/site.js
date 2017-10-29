@@ -54,14 +54,21 @@ console.log(window.y);
 //  the global scope:
 
 function arrayEach(array, func) {
+
+  var i;
+
   for (i = 0; i < array.length; i++) {
     func(array[i]);
   }
 }
 
-arrayEach(['red','green','blue'], console.log);
+arrayEach(['red', 'green', 'blue'], console.log);
 
-console.log(i) // should be 'undefined', not 3
+console.log(i); // should be 'undefined', not 3
+
+// Getting error in output for i being undefined. Moved declaration of
+// i inside the function before the for loop creating it to be undefined
+// at the global scale.
 
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
