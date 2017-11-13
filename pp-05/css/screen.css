@@ -24,4 +24,14 @@ body {
 /* ===== MODULAR STYLES ===== */
 
 
+#doorbell {
+  list-style-type: none;
+  text-decoration: underline;
+}
+
 /* ===== STATE STYLES ===== */
+
+
+.js #doorbell {
+  cursor: pointer;
+}
