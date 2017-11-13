@@ -20,4 +20,9 @@ $.noConflict();
   $('#doorbell').on('click', function(){
     doorbell.play();
   });
+
+  //  Pressing d key will play audio
+  window.addEventListener("keyup", function(){
+    doorbell.play();
+  });
 })(jQuery);
