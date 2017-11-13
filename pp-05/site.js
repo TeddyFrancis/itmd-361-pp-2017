@@ -16,4 +16,8 @@ $.noConflict();
   //  JavaScript is present.
   $("audio").remove();
 
+  //  Getting doorbell to play on click
+  $('#doorbell').on('click', function(){
+    doorbell.play();
+  });
 })(jQuery);
