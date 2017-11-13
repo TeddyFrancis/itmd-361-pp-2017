@@ -11,6 +11,9 @@ $.noConflict();
   var doorbell = new Audio('media/doorbell.mp3');
 
   $('html').removeClass('nojs').addClass('js');
+
+  //  Removes the audio controls from the HTML code if
+  //  JavaScript is present.
   $("audio").remove();
 
 })(jQuery);
